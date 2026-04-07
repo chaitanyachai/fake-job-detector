@@ -1,0 +1,135 @@
+/* Reset default margins */
+body {
+    font-family: Arial, sans-serif;
+    /* Copilot-style gradient background */
+    background: linear-gradient(135deg, #0f172a, #1e3a8a, #0d9488);
+    margin: 0;
+    padding-top: 80px;   /* space for fixed nav */
+    min-height: 100vh;
+}
+
+/* Container to hold all content */
+.container {
+    text-align: center;
+    width: 60%;
+    max-width: 700px;
+    background: white;   /* card stays white for readability */
+    padding: 30px;
+    border-radius: 12px;
+    /* Soft glow effect */
+    box-shadow: 0 0 25px rgba(13, 148, 136, 0.4), 
+                0 0 50px rgba(30, 58, 138, 0.3);
+    margin: 20px auto;   /* center horizontally */
+}
+
+/* Sticky Navigation bar */
+nav {
+    position: fixed;     /* stays at top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0d9488; /* teal accent */
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;       /* ensures it stays above content */
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Headings */
+h1 {
+    color: #1e3a8a; /* deep indigo */
+    margin-bottom: 20px;
+}
+
+/* Description box (single-line style) */
+textarea {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px;
+    margin-top: 10px;
+    resize: none;       /* prevent resizing */
+    height: 40px;       /* single-line height */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button styling */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #0d9488; /* teal accent */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #0f766e; /* darker teal */
+    box-shadow: 0 0 10px rgba(13, 148, 136, 0.6);
+}
+
+/* Alerts */
+.alert {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.alert.real {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert.fake {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* History table */
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #1e3a8a; /* indigo header */
+    color: white;
+}
+
+/* Back to Home button */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0d9488;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0f766e;
+    box-shadow: 0 0 10px rgba(13, 148, 136, 0.6);
+}

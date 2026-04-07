@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction History</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/history">History</a>
+        </nav>
+
+        <h1>Prediction History</h1>
+
+        {% if jobs %}
+        <table>
+            <tr>
+                <th>Description</th>
+                <th>Prediction</th>
+                <th>Keyword</th>
+            </tr>
+            {% for desc, pred, key in jobs %}
+            <tr>
+                <td>{{ desc }}</td>
+                <td>{{ pred }}</td>
+                <td>{{ key if key else "None" }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <p>No history available yet.</p>
+        {% endif %}
+
+        <!-- Back to Home button -->
+        <div style="margin-top:20px;">
+            <a href="/" class="btn">Go to Home Page</a>
+        </div>
+    </div>
+</body>
+</html>
