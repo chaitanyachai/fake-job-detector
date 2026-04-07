@@ -1,3 +1,6 @@
 flask
 gunicorn
 sqlite3-binary
+scikit-learn
+pandas
+numpy
